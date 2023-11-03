@@ -1,4 +1,6 @@
 import { createStore } from "vuex";
+import userMutation from "./mutations";
+
 
 const store = createStore({
     state(){
@@ -6,9 +8,9 @@ const store = createStore({
             name: '',
             age: 0,
             house_number: ''
-        },
-        mutations: ,
+        }
+    },
+    mutations: userMutation,
         actions: ,
         getters: ,
-    }
 })

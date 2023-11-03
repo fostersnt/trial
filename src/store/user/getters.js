@@ -10,3 +10,5 @@ const userGetters = {
         return state.house_number;
     }
 }
+
+export default userGetters

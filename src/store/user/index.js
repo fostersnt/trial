@@ -1,11 +1,11 @@
-import { createStore } from "vuex";
 import userMutation from "./mutations";
 import userGetters from "./getters";
 
-const store = createStore({
+const userModule = {
+    namespaced: true,
   state() {
     return {
-      name: "",
+      name: "Amponsah",
       age: 0,
       house_number: "",
     };
@@ -13,4 +13,6 @@ const store = createStore({
   mutations: userMutation,
   // actions: ,
   getters: userGetters,
-});
+}
+
+export default userModule

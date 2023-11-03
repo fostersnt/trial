@@ -1,16 +1,20 @@
 <template>
-    <Home-Page></Home-Page>
+  <NavBar />
+    <!-- <Home-Page></Home-Page> -->
+    <router-view/>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import HomePage from "./components/views/HomePage.vue";
+// import HomePage from "./components/views/HomePage.vue";
+import NavBar from '@/components/views/NavBar.vue';
 
 export default {
-  name: 'App',
+  name: 'nav-bar',
   components: {
     // HelloWorld,
-    HomePage
+    // HomePage,
+    NavBar
   }
 }
 </script>
